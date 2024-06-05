@@ -10,10 +10,16 @@ export function isPage () {
   return this.__nodeid__ === 0 || this.__nodeId__ === 0
 }
 
+/**
+ * initRefs
+ * @param {*} vm
+ */
 export function initRefs (vm) {
   const mpInstance = vm.$scope
   /* eslint-disable no-undef */
   const [majorVersion = '', minorVersion = ''] = tt.getSystemInfoSync().SDKVersion.split('.')
+
+  // 1.16
   if (parseInt(majorVersion) > 1 || parseInt(minorVersion) > 16) {
     initRefsBase(vm)
   } else {
@@ -55,6 +61,11 @@ export function initRelation ({
   })
 }
 
+/**
+ * handleLink
+ * @param {*} param0
+ * @returns
+ */
 export function handleLink ({
   detail: {
     vuePid,

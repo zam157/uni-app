@@ -7,6 +7,12 @@ import {
   fixSetDataEnd
 } from '../../../mp-weixin/runtime/wrapper/fix-set-data'
 
+/**
+ * parseComponent 快手
+ * @param {*} vueComponentOptions
+ * @param {boolean} needVueOptions
+ * @returns
+ */
 export default function parseComponent (vueComponentOptions, needVueOptions) {
   const [componentOptions, vueOptions] = parseBaseComponent(vueComponentOptions, true)
   const oldAttached = componentOptions.lifetimes.attached

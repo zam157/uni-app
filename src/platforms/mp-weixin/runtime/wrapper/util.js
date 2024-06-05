@@ -27,6 +27,10 @@ export function initBehavior (options) {
   return Behavior(options)
 }
 
+/**
+ * isPage
+ * @returns  boolean
+ */
 export function isPage () {
   return !!this.route
 }

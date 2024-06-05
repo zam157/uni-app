@@ -15,6 +15,13 @@ import {
   initBehavior
 } from './util'
 
+/**
+ * parseBaseComponent
+ * @param {*} vueComponentOptions
+ * @param {{isPage:boolean,initRelation:Function}} param1
+ * @param {boolean} needVueOptions optional
+ * @returns
+ */
 export default function parseBaseComponent (vueComponentOptions, {
   isPage,
   initRelation

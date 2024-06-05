@@ -16,6 +16,8 @@ import * as extraApi from './extra'
 
 import * as eventApi from './event-bus'
 
+// 变量：alias uni-platform env.UNI_PLATFORM
+// eg: uni-platform=mp-weixin src/platforms/mp-weixin/runtime/index.js
 import * as api from 'uni-platform/runtime/api/index.js'
 
 import {

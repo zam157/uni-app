@@ -50,6 +50,11 @@ const PLATFORMS = {
   }
 }
 
+
+// {
+//     prefix: 'wx',
+//     title: '微信小程序'
+//   }
 const platform = PLATFORMS[process.env.UNI_PLATFORM]
 
 let input = 'src/core/runtime/index.js'

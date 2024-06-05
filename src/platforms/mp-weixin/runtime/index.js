@@ -1,3 +1,6 @@
+/**
+ * import by src/core/runtime/index.js uni-platform=mp-weixin
+ */
 import {
   cached,
   camelize

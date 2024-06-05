@@ -12,6 +12,11 @@ import {
 
 import parseBaseComponent from '../../../mp-weixin/runtime/wrapper/component-base-parser'
 
+/**
+ * currentComponents
+ * @param {*} mpInstance
+ * @param {*} callback
+ */
 function currentComponents (mpInstance, callback) {
   const webviewId = mpInstance.__webviewId__
   const currentComponents = components[webviewId]
@@ -20,6 +25,12 @@ function currentComponents (mpInstance, callback) {
   }
 }
 
+/**
+ * parseComponent 头条
+ * @param {*} vueComponentOptions
+ * @param {boolean} needVueOptions
+ * @returns
+ */
 export default function parseComponent (vueComponentOptions, needVueOptions) {
   const [componentOptions, vueOptions, VueComponent] = parseBaseComponent(vueComponentOptions, {
     isPage,
