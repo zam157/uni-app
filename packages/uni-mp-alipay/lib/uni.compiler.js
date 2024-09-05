@@ -46,6 +46,7 @@ const EVENTS = {
   loadedmetadata: 'renderStart',
   // swiper
   animationfinish: 'animationEnd',
+  // button
   chooseavatar: 'chooseAvatar'
 }
 
