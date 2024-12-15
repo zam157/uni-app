@@ -1,5 +1,5 @@
 {
-  "name": "@dcloudio/uni-cli-shared",
+  "name": "@zam157/uni-cli-shared",
   "version": "2.0.2-4030620241128001",
   "description": "uni-cli-shared",
   "main": "lib/index.js",
@@ -27,5 +27,5 @@
     "postcss-urlrewrite": "^0.2.2",
     "strip-json-comments": "^2.0.1"
   },
-  "gitHead": "4a974e44466ae58194372e446299cf83c7a3ad2c"
+  "gitHead": "3708b8c67a2c47d05660544c991393ff05359bac"
 }
